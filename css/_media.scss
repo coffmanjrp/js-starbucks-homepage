@@ -16,6 +16,9 @@
 }
 
 @media (min-width: 1440px) {
+  .divider {
+    max-width: 90%;
+  }
   .box {
     max-width: 1440px;
     margin-left: auto;

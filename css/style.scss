@@ -157,6 +157,13 @@ section a {
   }
 }
 
+.divider {
+  margin: 40px auto;
+  width: 95%;
+  height: 1px;
+  background-color: #ccc;
+}
+
 /* Navbar */
 .navbar {
   padding: 20px;
@@ -241,6 +248,31 @@ section a {
     .box-text {
       max-width: 600px;
     }
+  }
+}
+
+/* Footer & Social */
+.footer {
+  &-container {
+    margin: 0 auto;
+    padding: 0 30px 30px;
+    width: 100%;
+    max-width: 1440px;
+  }
+}
+
+.social {
+  display: flex;
+
+  align-items: center;
+  margin: 20px 0;
+  img {
+    width: 35px;
+    height: 35px;
+  }
+  a {
+    margin-right: 20px;
+    text-decoration: none;
   }
 }
 
