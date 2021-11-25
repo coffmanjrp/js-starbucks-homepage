@@ -43,6 +43,21 @@ section a {
   color: #fff;
 }
 
+.divider {
+  margin: 40px auto;
+  width: 95%;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.hidden {
+  transform: translateX(100%);
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
 /* Padding */
 .py {
   &-lg {
@@ -157,13 +172,6 @@ section a {
   }
 }
 
-.divider {
-  margin: 40px auto;
-  width: 95%;
-  height: 1px;
-  background-color: #ccc;
-}
-
 /* Navbar */
 .navbar {
   padding: 20px;
@@ -268,6 +276,47 @@ section a {
     }
     &-bottom {
       transform: rotate(-45deg) translate(-6px, 6px);
+    }
+  }
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  position: fixed;
+  top: 85px;
+  right: 0;
+  padding: 30px;
+  width: 90%;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: inset 0 4px 3px -3px rgba(0, 0, 0, 0.1),
+    inset 0 4px 2px -2px rgba(0, 0, 0, 0.07);
+  color: #000;
+  transition: all 0.3s ease;
+  img {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+  }
+  ul {
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #777;
+    line-height: 3;
+  }
+  a {
+    font-size: 1.25rem;
+    text-decoration: none;
+    &:hover {
+      color: var(--color-primary);
+    }
+  }
+  div {
+    margin-top: 20px;
+    a {
+      display: flex;
+      align-items: center;
+      font-size: 1rem;
     }
   }
 }
