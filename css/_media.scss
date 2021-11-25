@@ -1,8 +1,24 @@
 @media (max-width: 960px) {
+  .text {
+    &-xl {
+      font-size: 1.875rem;
+    }
+    &-lg {
+      font-size: 1.5625rem;
+    }
+    &-md {
+      font-size: 1.1875rem;
+    }
+  }
 }
 
 @media (max-width: 768px) {
 }
 
 @media (min-width: 1440px) {
+  .box {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

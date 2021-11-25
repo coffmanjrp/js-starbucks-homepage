@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
-@import 'media';
 
 *,
 *::before,
@@ -13,6 +12,7 @@
   --color-primary: #006241;
   --color-secondary: #d50032;
   --color-extra: #d4e9e2;
+  --color-dark: #090909;
 }
 
 html,
@@ -41,6 +41,66 @@ img {
 
 section a {
   color: #fff;
+}
+
+/* Padding */
+.py {
+  &-lg {
+    padding: 40px 0;
+  }
+  &-md {
+    padding: 20px 0;
+  }
+  &-sm {
+    padding: 10px 0;
+  }
+}
+
+/* Backgrounds */
+.bg {
+  &-primary {
+    background-color: var(--color-primary);
+    color: #fff;
+  }
+  &-secondary {
+    background-color: var(--color-secondary);
+    color: #fff;
+  }
+  &-extra {
+    background-color: var(--color-extra);
+    color: #000;
+  }
+  &-dark {
+    background-color: var(--color-dark);
+    color: #fff;
+  }
+}
+
+/* Text Styling */
+.text {
+  &-center {
+    text-align: center;
+  }
+  &-xl {
+    margin-bottom: 20px;
+    font-size: 3.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.375rem;
+  }
+  &-lg {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+  }
+  &-md {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+  &-sm {
+    margin-bottom: 20px;
+    font-size: 1.1875rem;
+  }
 }
 
 /* Buttons */
@@ -141,3 +201,15 @@ section a {
     }
   }
 }
+
+/* Box */
+.box {
+  margin-bottom: 30px;
+  &-inner {
+    margin: 0 auto;
+    max-width: 700px;
+  }
+}
+
+/* Media Queries */
+@import 'media';
