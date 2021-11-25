@@ -256,6 +256,7 @@ section a {
 /* Hamburger Menu Icon */
 .hamburger {
   position: relative;
+  display: none;
   width: 24px;
   height: 24px;
   background: none;
@@ -287,6 +288,20 @@ section a {
 .hamburger-bottom {
   -webkit-transform: translateY(14px);
           transform: translateY(14px);
+}
+
+.open .hamburger-top {
+  -webkit-transform: rotate(45deg) translate(6px, 6px);
+          transform: rotate(45deg) translate(6px, 6px);
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+          transform: rotate(-45deg) translate(-6px, 6px);
 }
 
 /* Box */
@@ -376,6 +391,9 @@ section a {
   .navbar-brand img {
     width: 40px;
     height: 40px;
+  }
+  .hamburger {
+    display: block;
   }
   .footer {
     text-align: center;

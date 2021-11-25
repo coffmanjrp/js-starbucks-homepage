@@ -230,6 +230,7 @@ section a {
 /* Hamburger Menu Icon */
 .hamburger {
   position: relative;
+  display: none;
   width: 24px;
   height: 24px;
   background: none;
@@ -254,6 +255,20 @@ section a {
   }
   &-bottom {
     transform: translateY(14px);
+  }
+}
+
+.open {
+  .hamburger {
+    &-top {
+      transform: rotate(45deg) translate(6px, 6px);
+    }
+    &-middle {
+      display: none;
+    }
+    &-bottom {
+      transform: rotate(-45deg) translate(-6px, 6px);
+    }
   }
 }
 
