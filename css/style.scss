@@ -227,6 +227,36 @@ section a {
   }
 }
 
+/* Hamburger Menu Icon */
+.hamburger {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  background: none;
+  border: none;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  z-index: 10;
+  &-top,
+  &-middle,
+  &-bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: #000;
+    transform: rotate(0deg);
+    transition: all 0.5s ease;
+  }
+  &-middle {
+    transform: translateY(7px);
+  }
+  &-bottom {
+    transform: translateY(14px);
+  }
+}
+
 /* Box */
 .box {
   margin-bottom: 30px;

@@ -253,6 +253,42 @@ section a {
   margin: 0 5px;
 }
 
+/* Hamburger Menu Icon */
+.hamburger {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  background: none;
+  border: none;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.hamburger-top, .hamburger-middle, .hamburger-bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: #000;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.hamburger-middle {
+  -webkit-transform: translateY(7px);
+          transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  -webkit-transform: translateY(14px);
+          transform: translateY(14px);
+}
+
 /* Box */
 .box {
   margin-bottom: 30px;
