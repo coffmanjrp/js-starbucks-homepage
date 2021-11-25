@@ -321,6 +321,31 @@ section a {
   }
 }
 
+@media (max-width: 768px) {
+  .grid-col-2 {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .grid-reversed :first-child {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  .navbar ul.navbar-nav-left {
+    display: none;
+  }
+  .navbar ul.navbar-nav-right {
+    display: none;
+  }
+  .navbar-brand img {
+    width: 40px;
+    height: 40px;
+  }
+  .footer {
+    text-align: center;
+  }
+}
+
 @media (min-width: 1440px) {
   .divider {
     max-width: 90%;

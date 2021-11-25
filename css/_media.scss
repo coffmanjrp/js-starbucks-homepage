@@ -13,6 +13,41 @@
 }
 
 @media (max-width: 768px) {
+  .grid {
+    &-col {
+      &-2 {
+        grid-template-columns: 1fr;
+      }
+    }
+    &-reversed {
+      :first-child {
+        order: 0;
+      }
+    }
+  }
+
+  .navbar {
+    ul {
+      &.navbar-nav {
+        &-left {
+          display: none;
+        }
+        &-right {
+          display: none;
+        }
+      }
+    }
+    &-brand {
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+
+  .footer {
+    text-align: center;
+  }
 }
 
 @media (min-width: 1440px) {
