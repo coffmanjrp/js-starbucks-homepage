@@ -2,4 +2,4 @@
 
 A Starbucks homepage clone.
 
-![Starbucks Homepage Clone](https://res.cloudinary.com/coffmanjrp-dev/image/upload/v1643147033/coffmanjrp.io/mobile_tab_navigation_70de6a10ff.png)
+![Starbucks Homepage Clone](https://res.cloudinary.com/coffmanjrp-dev/image/upload/v1643231189/coffmanjrp.io/starbucks_homepage_8ee82ea42b.png)
